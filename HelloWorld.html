@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" href="helloworld.css">
 		<title>
 			My First Webpage
 		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			table, th, td {
 				border: 1px solid black;
@@ -14,10 +16,18 @@
 	<body>
 		<header>
 			<h1>My Page</h1>
-			<p>Hello world.</p>
+			<p id="testparagraph">Hello world.</p>
+			<img src="Images/helloworld.png" height="100px">
 		</header>
 		
-		<section>
+		<nav>
+			<a href="HelloWorld.html">Home</a>
+			<a href="#hobbies">My Hobbies</a>
+			<a href="#myclasses">My Classes</a>
+			<a href="board games.html">Board Games</a>
+		</nav>
+		
+		<section id="hobbies">
 			<h2>Hobbies</h2>
 			<p>I have some hobbies.</p>
 		
@@ -28,7 +38,9 @@
 			</ol>
 		</section>
 		
-		<section>
+		<iframe width="560" height="315" src="https://youtu.be/CFRhGnuXG-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encripted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		
+		<section id="myclasses">
 			<h2>My Classes</h2>
 			<p>Here are my classes.</p>
 			
@@ -59,9 +71,28 @@
 				</tbody>
 			</table>
 			
+			<form>
+				<label for="fname">First name: </label>
+				<input id="frame" type="text" name="firstname">
+				<br>
+				<label for="lname">Last name: </label>
+				<input id="frame" type="text" name="lastname">
+				<br>
+				<p>Gender:</p>
+				<label for="male">Male: </label>
+				<input id="male" type="radio" name="gender" value="male">
+				<br>
+				<label for="female">Female: </label>
+				<input id="female" type="radio" name="gender" value="female">
+				<br>
+				<label for="other">Other: </label>
+				<input id="other" type="radio" name="gender" value="other">
+				<br>
+				
+				<input type="submit" value="Submit">
+			</form>
+			
 			<h3>CSC 105</h3>
-			
-			
 			
 			<!-- Add content here 
 				 Put stuff about CSC 105 in here -->
