@@ -1,0 +1,49 @@
+* {
+		font-family: times new roman, arial, sans serif;
+		color: red;
+}
+
+h1, h2 {
+		text-decoration: underline;
+}
+
+li {
+		color: green;
+		font-size: 35pt;
+}
+
+li {
+		color: orange;
+		text-decoration: underline;
+		font-style: italic;
+		font-weight: 600;
+}
+
+ul li {
+		background: green;
+}
+
+#favgames {
+		color: red;
+		font-size: 80px;
+}
+
+.centered {
+		text-align: center;
+		color: blue;
+}
+
+.vibrant {
+		color: pink;
+		background: #791934;
+}
+
+li.centered {
+		text-align: right;
+}
+
+* {
+		border: 1px;
+		border-style: solid;
+		border-color: black;
+}
