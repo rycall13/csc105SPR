@@ -12,7 +12,7 @@ header {
     color: white;
     text-align: center;
     padding: 25px;
-    font-size: 1.8em;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -21,13 +21,20 @@ main {
     margin: 30px auto;
     padding: 20px;
     background: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 h1, h2 {
     text-align: center;
     color: #005082;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+p {
+	font-size: 18px;
 }
 
 h2:hover {
@@ -46,7 +53,6 @@ h2:hover {
     width: 100%;
     max-width: 400px;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -59,7 +65,7 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    font-size: 1em;
+    font-size: 15px;
     font-weight: bold;
 }
 
