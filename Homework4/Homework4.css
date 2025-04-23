@@ -1,0 +1,161 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(90deg, #0077b6, #00a8e8);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #005082;
+    padding: 10px 0;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00a8e8;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #005082;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+p {
+    font-size: 18px;
+}
+
+h2:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: linear-gradient(90deg, #0077b6, #00a8e8);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        max-width: 95%;
+    }
+
+    .image-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1025px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .intro, .gallery, .content {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .intro p, .content p {
+        flex: 1 1 30%;
+    }
+
+    .image-container img {
+        flex: 1 1 30%;
+    }
+}
