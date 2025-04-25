@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <title>Contact Form</title>
+	  <link rel="stylesheet" href="Homework9.css"/>
+	  <script src="Homework9.js" defer></script>
+	</head>
+	<body>
+	  <section class="contact-form">
+		<h2>Contact Us</h2>
+		<form id="messageForm" novalidate>
+		  <label for="name">Name: </label>
+		  <input type="text" id="name" required />
+		  <p class="error" id="nameError"></p>
+
+		  <label for="email">Email: </label>
+		  <input type="email" id="email" required />
+		  <p class="error" id="emailError"></p>
+
+		  <label for="message">Message: </label>
+		  <textarea id="message" maxlength="300" required></textarea>
+		  <p class="error" id="messageError"></p>
+
+		  <button type="submit">Send Message</button>
+		</form>
+	  </section>
+	</body>
+</html>
